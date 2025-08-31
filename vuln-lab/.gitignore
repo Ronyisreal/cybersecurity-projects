@@ -1,0 +1,8 @@
+# Ignore raw scan outputs (commit sanitized extracts)
+scans/*.nessus
+scans/*.nmap
+scans/*.gnmap
+scans/*.xml
+scans/*.html
+scans/*.json
+scans/*.pdf

@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Virtual envs
+.venv/
+env/
+venv/
+
+# Reports/outputs (commit sanitized exports only)
+*.html
+*.csv
+*.xml
+*.json
+*.nessus
+*.nmap
+*.gnmap
+*.pdf
+
+# Secrets
+*.key
+*.pem
+*.crt
+.env
+.env.*
+secrets.*
+
+# Docker
+**/.dockerignore
+**/docker-compose.override.yml
+
+# Editors
+.vscode/
+.idea/
