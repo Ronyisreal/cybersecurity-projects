@@ -3,7 +3,7 @@
 ## Project Goal
 Design a small, contained lab that you can **scan, fix, and rescan** to demonstrate real vulnerability management skills: discovery, assessment, prioritization (CVSS + context), remediation, and proof of **risk reduction** with before/after results.
 
-## What you'll build
+## What I'll build
 - A mini network with intentionally vulnerable targets (VMs/containers).
 - Automated discovery (Nmap), vuln scans (Nessus/OpenVAS, Trivy), and web DAST (OWASP ZAP).
 - A remediation cycle with measurable deltas (critical/high counts down).
@@ -50,5 +50,5 @@ Tools:
 - `docs/talk-track.md` — 5–8 minute demo script
 - `scans/` — sanitized reports (no secrets), both **before** and **after**
 
-> ⚠️ Ethics: scan only lab systems you own/control. Throttle intrusive scans and avoid production networks.
+
 
