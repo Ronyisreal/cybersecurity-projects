@@ -11,13 +11,13 @@
 
 ---
 
-## About this Repository
+## > About this Repository
 This repository contains a collection of **cybersecurity projects** I’ve built to demonstrate my technical skills for entry-level security roles.  
 Each project follows a repeatable process: **discover → assess → remediate → rescan → document**.
 
 ---
 
-## Projects
+## > Projects
 
 - **[Vulnerability Scanning Home Lab](./vuln-lab/)**  
   <sub>Goal: Build a small, isolated lab to practice vulnerability discovery and remediation. Includes Nmap, Nessus/OpenVAS, OWASP ZAP, and Trivy scans with before/after results.</sub>
@@ -26,7 +26,7 @@ Each project follows a repeatable process: **discover → assess → remediate �
 
 ---
 
-## Skills Demonstrated
+## > Skills Demonstrated
 - Network discovery & port scanning (Nmap, NSE)
 - Vulnerability scanning (Nessus / OpenVAS, Trivy)
 - Web app security testing (OWASP ZAP, DVWA, Juice Shop)
@@ -36,7 +36,7 @@ Each project follows a repeatable process: **discover → assess → remediate �
 
 ---
 
-## Author
+## > Author
 **Rounak Mukherjee**  
   Final-year Computer Systems Engineering | Cybersecurity Enthusiast  
   [LinkedIn](https://www.linkedin.com/in/rounakmukherjee/) • [GitHub](https://github.com/Ronyisreal)
