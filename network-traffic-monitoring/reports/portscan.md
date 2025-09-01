@@ -13,7 +13,7 @@ To observe the behavior of a port scan and how it appears in Wireshark, includin
 
 ## Observations  
 
-1. **Packet List (screenshots/portscan.png)**  
+1. **Packet List (portscan-2025-09-02.pcapng)**  
    - Shows many TCP SYN packets from the attacker (192.168.0.134) targeting different destination ports.  
    - Several ports responded with TCP **RST** (closed ports).  
    - This burst of sequential SYNs is characteristic of a port scan.  
