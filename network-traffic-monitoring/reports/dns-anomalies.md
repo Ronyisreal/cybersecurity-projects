@@ -18,7 +18,7 @@ Show how Wireshark can detect **abnormal DNS traffic patterns** such as excessiv
 - Responses = **"No such name" (NXDOMAIN)** from the DNS server  
 - This is not normal for typical browsing, which usually queries well-known domains.  
 
-Screenshot: [NXDOMAIN Queries](../screenshots/dns-nxdomain.png)
+Screenshot: ![NXDOMAIN Queries](../screenshots/dns-nxdomain.png)
 
 ---
 
@@ -27,7 +27,7 @@ Screenshot: [NXDOMAIN Queries](../screenshots/dns-nxdomain.png)
 - DNS accounts for a high percentage compared to baseline browsing.  
 - This shift highlights the anomaly: too many DNS requests vs. other traffic.  
 
-Screenshot: [Protocol Hierarchy](../screenshots/dns-protocol.png)
+Screenshot: ![Protocol Hierarchy](../screenshots/dns-protocol.png)
 
 ---
 
@@ -35,7 +35,7 @@ Screenshot: [Protocol Hierarchy](../screenshots/dns-protocol.png)
 - UDP conversations (client → DNS server) show **repeated lookups** with minimal data transferred.  
 - Unlike baseline, where DNS exchanges were few and tied to active browsing.  
 
-Screenshot: [DNS Conversations](../screenshots/dns-conversations.png)
+Screenshot: ![DNS Conversations](../screenshots/dns-conversations.png)
 
 ---
 
@@ -44,7 +44,7 @@ Screenshot: [DNS Conversations](../screenshots/dns-conversations.png)
 - These spikes contrast the baseline, which had smoother traffic patterns.  
 - Such bursts could indicate automated queries (botnet/malware).  
 
-Screenshot: [I/O Graph](../screenshots/dns-io.png)
+Screenshot: ![I/O Graph](../screenshots/dns-io.png)
 
 ---
 
