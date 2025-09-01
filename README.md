@@ -12,7 +12,7 @@
 ---
 
 ## > About this Repository
-This repository contains a collection of **cybersecurity projects** I’ve built to demonstrate my technical skills for entry-level security roles.  
+This repository contains a collection of **cybersecurity projects** I’ve built to demonstrate my technical skills. 
 Each project follows a repeatable process: **discover → assess → remediate → rescan → document**.
 
 ---
