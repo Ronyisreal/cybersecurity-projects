@@ -1,11 +1,9 @@
-# Demo Talk-Track (5–8 minutes)
+# Demo Talk-Track (3–5 minutes)
 
-1. **Scope & Ethics (30s)** — isolated lab; safe profiles first.
-2. **Architecture (30s)** — show diagram, assets, IPs.
-3. **Discovery → Assessment (2m)** — Nmap → Nessus/OpenVAS → ZAP/Trivy.
-4. **Prioritization (1m)** — CVSS + context; pick top 3 risks.
-5. **Remediation (2m)** — show a concrete fix (e.g., secure headers + patch).
-6. **Proof (1m)** — before/after chart; reduced Highs; residual risk.
-7. **Close (30s)** — next steps (CI/CD Trivy, scheduled scans).
-
-Have one CVE example prepared and explain why its risk was high *for this environment*.
+- **Goal:** show a repeatable vuln mgmt cycle: discover → assess → remediate → rescan → document.
+- **Lab:** Juice Shop (3000), DVWA (8080), Nginx proxy (8081).
+- **Discovery:** Nmap confirms only intended ports.
+- **Assessment:** ZAP baseline/full identify weak/missing headers and typical DVWA vulns.
+- **Remediation:** Put nginx in front of DVWA; enforce CSP/XFO/Nosniff/Referrer-Policy.
+- **Rescan:** ZAP baseline via proxy shows improved posture (PASS = 56, fewer header warnings).
+- **Outcome:** measurable reduction in findings; pattern is reusable for other apps.
