@@ -18,8 +18,5 @@ This scan was run against the raw DVWA instance exposed directly on **http://loc
 - Insufficient **Spectre vulnerability isolation**
 - Multiple missing security headers (X-Content-Type-Options, Permissions Policy)
 
-## Screenshot
-![DVWA Before Scan](../docs/screenshots/dvwa-before.png)
-
-**Conclusion:**  
+## Conclusion:  
 The unprotected DVWA instance is highly insecure and exposes multiple missing header issues and misconfigurations. This demonstrates why web applications must be deployed with proper security headers and reverse proxies.
