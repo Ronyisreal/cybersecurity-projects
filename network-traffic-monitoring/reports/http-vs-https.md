@@ -41,7 +41,7 @@ Screenshot: [Protocol Hierarchy Comparison](../screenshots/http-vs-https-protoco
 
 ---
 
-## ✅ Key Takeaways
+## Key Takeaways
 - **HTTP is insecure**: Data travels in plaintext, making it vulnerable to sniffing, credential theft, and man-in-the-middle attacks.  
 - **HTTPS is secure**: TLS encrypts traffic, protecting the confidentiality and integrity of user data.  
 - Wireshark clearly shows the difference:  
@@ -50,7 +50,7 @@ Screenshot: [Protocol Hierarchy Comparison](../screenshots/http-vs-https-protoco
 
 ---
 
-## 💡 Real-World Relevance
+## Real-World Relevance
 - This experiment demonstrates why modern browsers warn against HTTP sites.  
 - Employers and security teams emphasize TLS adoption as a critical defense against eavesdropping.  
 - Monitoring HTTP vs HTTPS traffic is a common task for **network analysts** and **SOC teams**.  
