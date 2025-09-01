@@ -19,7 +19,7 @@ This highlights why HTTPS is the standard for secure web communication.
 - Headers such as `Host`, `User-Agent`, and `Accept-Language` were fully visible in the packet details.  
 - Anyone sniffing the network could easily view these requests.  
 
-Screenshot: [HTTP Traffic (Cleartext)](../screenshots/http-clear.png)
+Screenshot: ![HTTP Traffic (Cleartext)](../screenshots/http-clear.png)
 
 ---
 
@@ -28,7 +28,7 @@ Screenshot: [HTTP Traffic (Cleartext)](../screenshots/http-clear.png)
 - Unlike HTTP, the request/response contents were **not visible**.  
 - Only metadata (IP addresses, TLS handshake parameters) was exposed — the actual data was encrypted.  
 
-Screenshot: [HTTPS Traffic (TLS Handshake)](../screenshots/https-tls.png)
+Screenshot: ![HTTPS Traffic (TLS Handshake)](../screenshots/https-tls.png)
 
 ---
 
@@ -37,7 +37,7 @@ Screenshot: [HTTPS Traffic (TLS Handshake)](../screenshots/https-tls.png)
 - HTTPS traffic appeared under **TLSv1.2 / TLSv1.3**, hiding user data.  
 - This provides a clear contrast between plaintext and encrypted communication.  
 
-Screenshot: [Protocol Hierarchy Comparison](../screenshots/http-vs-https-protocol.png)
+Screenshot: ![Protocol Hierarchy Comparison](../screenshots/http-vs-https-protocol.png)
 
 ---
 
