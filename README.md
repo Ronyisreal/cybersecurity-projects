@@ -19,21 +19,38 @@ Each project follows a repeatable process: **discover → assess → remediate �
 
 ## > Projects
 
-- **[Vulnerability Scanning Home Lab](./vuln-lab/)**  
-  <sub>Goal: Build a small, isolated lab to practice vulnerability discovery and remediation. Includes Nmap, Nessus/OpenVAS, OWASP ZAP, and Trivy scans with before/after results.</sub>
+### [Vulnerability Scanning Home Lab](./vuln-lab/README.md)
+**Goal:** Build a small, isolated lab to practice vulnerability discovery and remediation.  
+**Tools:** Nmap, Nessus/OpenVAS, OWASP ZAP, Trivy, DVWA, Juice Shop  
+**Highlights:**  
+- Performed scans on intentionally vulnerable apps (DVWA & Juice Shop)  
+- Captured **before/after results** showing dropped vulnerabilities after remediation  
+- Documented scan reports and mitigation steps
 
+### [Network Traffic Monitoring (Wireshark)](./network-traffic-monitoring/README.md)
+**Goal:** Capture, analyze, and interpret network traffic to detect anomalies and attacks.  
+**Tools:** Wireshark, Nmap, Curl, nslookup, browser traffic  
+**Highlights:**  
+- Baseline analysis of normal home traffic (protocol hierarchy, top talkers)  
+- Detected **port scans** using TCP SYN flood patterns  
+- Analyzed **DNS queries** including NXDOMAIN anomalies  
+- Compared **HTTP vs HTTPS** (cleartext payload vs encrypted metadata)  
+- Monitored large data transfers to simulate **data exfiltration**  
+- Reported findings with screenshots and `.pcap` captures
+  
 *(More projects will be added soon — cloud security, SIEM, malware analysis, etc.)*
 
 ---
 
 ## > Skills Demonstrated
-- Network discovery & port scanning (Nmap, NSE)
-- Vulnerability scanning (Nessus / OpenVAS, Trivy)
-- Web app security testing (OWASP ZAP, DVWA, Juice Shop)
-- Risk assessment (CVSS scoring, prioritization)
-- Remediation & validation (patching, headers, service hardening)
-- Reporting & documentation for stakeholders
-
+- **Network discovery & port scanning** (Nmap, NSE)  
+- **Vulnerability scanning & remediation** (Nessus, OpenVAS, Trivy, ZAP)  
+- **Web app security testing** (DVWA, Juice Shop, OWASP ZAP)  
+- **Traffic monitoring & packet analysis** (Wireshark filters, TCP/IP, DNS, TLS)  
+- **Attack detection** (SYN scans, suspicious User-Agents, data exfil signals)  
+- **Encryption awareness** (limitations of HTTPS inspection, metadata analysis)  
+- **Risk assessment & reporting** (CVSS scoring, anomaly detection, stakeholder-ready docs)
+  
 ---
 
 ## > Author
