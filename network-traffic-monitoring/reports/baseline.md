@@ -20,7 +20,7 @@ Establish a baseline of **normal network traffic** for comparison against future
 - A small amount of **DNS queries (UDP/53)** present  
 - Minimal ARP/ICMP — expected for local network  
 
-Screenshot: [Protocol Hierarchy](../screenshots/baseline-protocol.png)
+Screenshot: ![Protocol Hierarchy](../screenshots/baseline-protocol.png)
 
 ---
 
@@ -29,7 +29,7 @@ Screenshot: [Protocol Hierarchy](../screenshots/baseline-protocol.png)
 - Data volumes in MB range → consistent with video streaming or software updates  
 - Other minor connections: DNS resolvers and multicast traffic  
 
-Screenshot: [Conversations](../screenshots/baseline-conversations.png)
+Screenshot: ![Conversations](../screenshots/baseline-conversations.png)
 
 ---
 
@@ -38,7 +38,7 @@ Screenshot: [Conversations](../screenshots/baseline-conversations.png)
 - TCP errors appear occasionally (retransmissions, resets), but low volume → normal in Wi-Fi environments  
 - Background traffic remained <100 packets/sec  
 
-Screenshot: [I/O Graph](../screenshots/baseline-io.png)
+Screenshot: ![I/O Graph](../screenshots/baseline-io.png)
 
 ---
 
