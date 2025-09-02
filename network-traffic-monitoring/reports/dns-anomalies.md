@@ -11,6 +11,17 @@ Show how Wireshark can detect **abnormal DNS traffic patterns** such as excessiv
 
 ---
 
+## Summary Table
+
+| Metric                  | Value                          |
+|--------------------------|--------------------------------|
+| Total Packets            | ~6,000                        |
+| Protocol Breakdown       | ~60% DNS, ~35% TCP, ~5% NBNS   |
+| DNS Error Responses      | Multiple NXDOMAIN detected     |
+| Top Queried Domain(s)    | `*.example.com` variants       |
+| Suspicious Behavior      | Excessive failed lookups       |
+
+
 ## Observations
 
 ### 1. Packet List (NXDOMAIN Responses)
