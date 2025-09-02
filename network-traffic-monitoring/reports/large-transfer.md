@@ -11,6 +11,17 @@ To analyze the impact of a large file transfer on network traffic and observe th
 
 ---
 
+## Summary Table
+
+| Metric                  | Value                                 |
+|--------------------------|---------------------------------------|
+| Total Packets            | ~100,309                             |
+| Protocol Breakdown       | ~97% TCP, ~2.5% UDP, ~0.5% QUIC       |
+| Dominant Flow            | Single large TCP stream               |
+| Peak Packet Rate         | ~8,000 packets/sec (during transfer)  |
+| Errors                   | TCP retransmissions (minor recovery)  |
+
+
 ## Observations
 
 ### 1. Packet Capture
