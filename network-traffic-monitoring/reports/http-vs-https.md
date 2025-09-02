@@ -12,6 +12,17 @@ This highlights why HTTPS is the standard for secure web communication.
 
 ---
 
+## Summary Table
+
+| Metric                  | Value                                   |
+|--------------------------|-----------------------------------------|
+| Total Packets            | ~1,300                                  |
+| Protocol Breakdown       | ~55% TCP, ~40% TLS/HTTPS, ~5% HTTP      |
+| HTTP Requests            | Visible headers, readable in plaintext  |
+| HTTPS Sessions           | Encrypted traffic w/ TLS handshake      |
+| Security Observation     | HTTP traffic is insecure → data visible |
+
+
 ## Observations
 
 ### 1. HTTP (Unencrypted)
