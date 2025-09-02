@@ -11,6 +11,17 @@ Establish a baseline of **normal network traffic** for comparison against future
 
 ---
 
+## Summary Table
+
+| Metric                  | Value                                   |
+|--------------------------|-----------------------------------------|
+| Total Packets            | ~6,000                                  |
+| Protocol Breakdown       | ~99% IPv4, ~45% TCP, ~54% UDP           |
+| Dominant Traffic         | TLS-encrypted HTTPS (port 443)          |
+| DNS Queries              | Small amount (UDP/53)                   |
+| Anomalies                | Minimal TCP retransmissions (normal Wi-Fi) |
+
+
 ## Observations
 
 ### 1. Protocol Hierarchy
