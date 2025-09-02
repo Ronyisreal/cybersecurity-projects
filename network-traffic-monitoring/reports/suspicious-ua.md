@@ -12,6 +12,17 @@ This simulates how attackers or malware may use non-standard User-Agents for rec
 
 ---
 
+## Summary Table
+
+| Metric                  | Value                                   |
+|--------------------------|-----------------------------------------|
+| Total Packets            | ~232                                   |
+| Protocol Breakdown       | ~75% TCP (TLS/HTTPS), ~20% UDP/QUIC     |
+| Suspicious Traffic       | HTTP (unencrypted) with odd User-Agents |
+| Normal UA Example        | Mozilla/5.0 (Chrome, Firefox, Safari)  |
+| Suspicious UA Example    | Non-standard/incomplete fields          |
+
+
 ## Observations
 
 ### 1. HTTP Requests (Filtered by `http`)
