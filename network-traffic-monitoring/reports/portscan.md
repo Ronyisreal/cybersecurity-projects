@@ -11,6 +11,17 @@ To observe the behavior of a port scan and how it appears in Wireshark, includin
 
 ---
 
+## Summary Table
+
+| Metric                  | Value                                 |
+|--------------------------|---------------------------------------|
+| Total Packets            | ~350                                  |
+| Protocol Breakdown       | ~41% TCP, ~48% UDP, ~4.6% DNS         |
+| Behavior Observed        | Burst of TCP SYN packets              |
+| Responses                | Many TCP RST (closed ports)           |
+| Suspicious Indicator     | Sequential SYNs = Port Scan signature |
+
+
 ## Observations  
 
 ### 1. Packet List (portscan-2025-09-02.pcapng)  
