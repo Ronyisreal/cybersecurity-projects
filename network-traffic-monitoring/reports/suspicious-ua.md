@@ -19,11 +19,12 @@ This simulates how attackers or malware may use non-standard User-Agents for rec
 - Some requests used **non-standard or incomplete User-Agent fields**, which do not match common browser signatures.  
 - Legitimate traffic usually has recognizable strings like *Mozilla/5.0 (Chrome, Firefox, Safari)*.  
 - Suspicious UA packets are often a red flag for:
-  - Automated scripts / crawlers
-  - Malware beaconing
-  - Reconnaissance tools (e.g., curl, custom Python requests)
+  - Automated scripts / crawlers  
+  - Malware beaconing  
+  - Reconnaissance tools (e.g., curl, custom Python requests)  
 
-Saved as: `screenshots/suspicious-ua.png`
+Screenshot:  
+![HTTP Requests](../screenshots/suspicious-ua.png)  
 
 ---
 
@@ -33,27 +34,30 @@ Saved as: `screenshots/suspicious-ua.png`
 - Protocol statistics confirm:
   - ~75% TCP traffic (normal HTTPS/TLS)  
   - ~20% UDP/QUIC (modern browsers)  
-  - **HTTP/Line-based text data** (~2–3%) flagged as suspicious.
+  - **HTTP/Line-based text data** (~2–3%) flagged as suspicious.  
 
-Saved as: `screenshots/suspicious-ua-protocol.png`
+Screenshot:  
+![Protocol Breakdown](../screenshots/suspicious-ua-protocol.png)  
 
 ---
 
 ### 3. Conversations
 - Source: `192.168.0.134` (local host) → multiple external IPs.  
 - Conversations show a few KB of HTTP traffic compared to MBs of TLS traffic.  
-- Indicates these suspicious requests were **low-volume but distinct**.
+- Indicates these suspicious requests were **low-volume but distinct**.  
 
-Saved as: `screenshots/suspicious-ua-conversations.png`
+Screenshot:  
+![Conversations](../screenshots/suspicious-ua-conversations.png)  
 
 ---
 
 ### 4. I/O Graph
 - Most traffic is TLS/QUIC (normal browsing).  
 - HTTP traffic spikes briefly, aligning with the suspicious UA requests.  
-- TCP error bars confirm retransmissions, possibly due to blocked or unresponsive endpoints.
+- TCP error bars confirm retransmissions, possibly due to blocked or unresponsive endpoints.  
 
-Saved as: `screenshots/suspicious-ua-io.png`
+Screenshot:  
+![I/O Graph](../screenshots/suspicious-ua-io.png)  
 
 ---
 
@@ -62,5 +66,3 @@ The capture highlights the difference between **normal encrypted browsing** and 
 - Unusual User-Agent headers are a strong anomaly.  
 - Low-volume HTTP requests amid encrypted traffic stand out in protocol and I/O analysis.  
 - In real-world monitoring, such traffic would warrant deeper inspection (e.g., packet payload analysis, threat intelligence lookups).
-
-
